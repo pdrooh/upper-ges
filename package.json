@@ -1,0 +1,14 @@
+{
+    "name": "igreja-app",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+      "start:frontend": "cd frontend && npm run dev",
+      "start:backend": "cd backend && node server.js",
+      "install": "cd frontend && npm install && cd ../backend && npm install"
+    },
+    "devDependencies": {
+      "concurrently": "^6.2.0"
+    }
+  }
+  
